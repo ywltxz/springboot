@@ -1,0 +1,6 @@
+application.properties中的spring.profiles.active:可以切换配置文件
+@value有两个包都有
+@PropertySource(value = "classpath:")指定配置文件
+@ConfigurationProperties(prefix = "developer")配置文件中前缀为developer的注入
+配置文件默认先扫application.property
+类文件要和运行文件运行文件（application结尾）在同一个文件夹下，或者在同一个文件夹的子文件夹中，否则web会404
